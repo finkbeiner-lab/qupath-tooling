@@ -192,6 +192,7 @@ import qupath.lib.gui.images.stores.ImageRegionStoreFactory;
 import qupath.lib.gui.logging.LogManager;
 import qupath.lib.gui.panes.ObjectDescriptionPane;
 import qupath.lib.gui.panes.AnnotationPane;
+import qupath.lib.gui.panes.AnnotationPaneSorted;
 import qupath.lib.gui.panes.ImageDetailsPane;
 import qupath.lib.gui.panes.PathObjectHierarchyView;
 import qupath.lib.gui.panes.PreferencePane;
@@ -4340,7 +4341,7 @@ public class QuPathGUI {
 		var tabAnnotations = new Tab("Annotations");
 		SplitPane splitAnnotations = new SplitPane();
 		splitAnnotations.setOrientation(Orientation.VERTICAL);
-		var annotationPane = new AnnotationPane(this, imageDataProperty());
+		var annotationPane = new AnnotationPaneSorted(this, imageDataProperty());
 		// Don't make updates if the tab isn't visible
 		var annotationTabVisible = Bindings.createBooleanBinding(() -> {
 			return tabAnnotations.getTabPane() == null || tabAnnotations.isSelected();
