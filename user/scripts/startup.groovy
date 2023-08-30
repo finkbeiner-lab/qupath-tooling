@@ -81,7 +81,8 @@ def overlayOptionsMap = [
     "opacity": (float) 1,
     "showAnnotations": (boolean) true,
     "showDetections": (boolean) true,
-    "showGrid": (boolean) true,
+    // "showGrid": (boolean) true,
+    "showGrid": (boolean) false,
     "showPixelClassification": (boolean) true,
     "showTMAGrid": (boolean) true,
 ]
