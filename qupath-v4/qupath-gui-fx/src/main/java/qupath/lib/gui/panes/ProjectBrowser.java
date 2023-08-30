@@ -746,7 +746,7 @@ public class ProjectBrowser implements ChangeListener<ImageData<BufferedImage>> 
 		if (entry == null) {
 			// Previously we gave a choice... now we force the image to be included in the project to avoid complications
 //			if (DisplayHelpers.showYesNoDialog("Add to project", "Add " + imageDataNew.getServer().getShortServerName() + " to project?"))
-				ensureServerInWorkspace(imageDataNew);
+				// ensureServerInWorkspace(imageDataNew);
 		} else if (!entry.equals(getSelectedEntry()))
 			setSelectedEntry(tree, tree.getRoot(), getSelectedImageRow());
 		if (tree != null) {
